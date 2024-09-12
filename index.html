@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -15,21 +16,24 @@
     <container>
       <div class="container">
         <div class="inputs">
+          <p class="error-day"></p>
           <p class="input-p">Day</p>
           <form>
-            <input class="input-number" placeholder="DD" type="number">
+            <input class="input-day" placeholder="DD" type="number">
           </form>
         </div>
           <div class="inputs">
+            <p class="error-month"></p>
             <p class="input-p">Month</p>
             <form>
-              <input class="input-number" placeholder="MM" type="number">
+              <input class="input-month" placeholder="MM" type="number">
             </form>
           </div>
         <div class="inputs">
+          <p class="error-year"></p>
           <p class="input-p">Year</p>
           <form>
-            <input class="input-number" placeholder="YYYY" type="number">
+            <input class="input-year" placeholder="YYYY" type="number">
           </form>
         </div>
         <div class="button">
@@ -39,16 +43,16 @@
               <!-- hhhhhhhh -->
       <div class="container-resul">
         <div class="resul">
-          <h2 class="resul-h2">--</h2>
-          <h1 class="resul-h1">years</h1>
+          <h2 class="resul-h2-year">--</h2>
+          <h1 class="resul-h1"> years</h1>
         </div>
         <div class="resul">
-            <h2 class="resul-h2">--</h2>
-            <h1 class="resul-h1">months</h1>
+            <h2 class="resul-h2-month">--</h2>
+            <h1 class="resul-h1"> months</h1>
         </div>
         <div  class="resul">
-          <h2 class="resul-h2">--</h2>
-          <h1 class="resul-h1">days</h1>
+          <h2 class="resul-h2-day">--</h2>
+          <h1 class="resul-h1"> days</h1>
         </div>
       </div>
     </container>

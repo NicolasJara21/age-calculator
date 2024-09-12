@@ -2,12 +2,16 @@ body{
     background-color:  hsl(0, 0%, 86%);
 }
 .container{
+    margin: auto;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #fff;
     width: 50vw;
+    min-height: 200px;
     height: 25vh;
+    min-width: 500px;
     border-radius: 20px 20px 0px 0px;
     align-items: center;
     border-bottom: 1px solid  hsl(0, 0%, 86%);
@@ -15,7 +19,12 @@ body{
 .input-p{
     font-family: "Poppins", sans-serif;
 }
-.input-number{
+.error-day , .error-month , .error-year{
+    height: 30px;
+    color: hsl(0, 100%, 67%);
+    width: 110px;
+}
+input{
     Font-size: 32px;
     font-family: "Poppins", sans-serif;
     width:100px;
@@ -23,9 +32,12 @@ body{
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 86%);
 }
+input:hover{
+    border: 1px solid hsl(259, 100%, 65%);
+}
 #button{
     position: relative;
-    top: 80px;
+    top: 100px;
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -34,15 +46,22 @@ body{
     background-color:  hsl(259, 100%, 65%);
     font-size: 32px;
 }
+#button:hover{
+    transition: 1s;
+    background-color:  hsl(0, 0%, 0%);
+}
 
 /* container-resul */
 
 .container-resul{
+    margin:  auto;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     width: 50vw;
+    min-width: 500px;
     height: 45vh;
+    min-height: 200px;
     border-radius: 0px 0px 100px 20px;
 }
 .resul{
@@ -53,13 +72,31 @@ body{
     padding: none;
     margin-left: 40px;
 }
-.resul-h2{
+.resul-h2-month , .resul-h2-day, .resul-h2-year{
     color:  hsl(259, 100%, 65%);
     font-size: 60px;
     font-weight: 900;
     margin: 0px;
 }
 .resul-h1{
+    padding-right: 10px;
     font-size: 60px;
     margin: 0px;
+}
+/* responsive */
+@media screen and (max-width: 800px) {
+    .container{
+        justify-content: center;
+        text-align: center;
+        }
+    .inputs{
+        padding-left: 60px;
+        margin: auto;
+    }
+    #button{
+        right: 250px;
+    }
+    .container-resul{
+        padding-top: 50px;
+    }
 }
